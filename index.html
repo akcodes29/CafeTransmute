@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
+    <title>CaféTransmute</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -15,6 +15,14 @@
 </head>
 
 <body>
+    <div id="name" class="text-center">
+        <div class="row">
+            <div class="col">
+                <h1>CaféTransmute</h1>
+            </div>
+        </div>
+    </div>
+
     <form>
         <label for="city">Please enter the city you would like to search.</label>
         <br>
@@ -23,20 +31,27 @@
         <input type="button" id="submit" value="Submit">
     </form>
 
-    <iframe
-width="600"
-height="450"
-style="border:0"
-loading="lazy"
-allowfullscreen
-referrerpolicy="no-referrer-when-downgrade"
-src="https://www.google.com/maps/embed/v1/search?key=AIzaSyD7RDg8X7uUVnvqkUwNzH0WpdBRlypx8v0&q=Coffee+shops+Swansea+Europe"></iframe>
-   
-    
+    <iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen
+        referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps/embed/v1/search?key=AIzaSyD7RDg8X7uUVnvqkUwNzH0WpdBRlypx8v0&q=Coffee+shops+Swansea+Europe"></iframe>
+
+    <div id="translateBox">
+        <h2>Translation</h2>
+        <input type="text">
+        <input type="text">
+        <button>Translate</button>
+    </div>
+
+    <div id="currencyConverter">
+        <h2>Currency Converter</h2>
+        <input type="text">
+        <input type="text">
+        <button>Convert</button>
+    </div>
     <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <h1>CaféTransmute</h1>
+
 
     <script src="./assets/js/script.js"></script>
 
@@ -48,4 +63,5 @@ src="https://www.google.com/maps/embed/v1/search?key=AIzaSyD7RDg8X7uUVnvqkUwNzH0
     <script src="https://code.jquery.com/jquery-3.7.0.js"
         integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
 </body>
+
 </html>
