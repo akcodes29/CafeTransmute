@@ -1,4 +1,69 @@
 #map {
     border-style: solid;
-    border-radius: 5%;
+    border-radius: 4%;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+} 
+
+#headerName {
+    background-color: blanchedalmond;
+    font-size: 45px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#citySubmit  {
+    margin-top: 10px;
+    background-color: #011954;
+    color: white;
+    border-radius: 15%;
+    width: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#cityPrompt {
+    font-size: 20px;
+}
+
+#cityForm #city {
+    margin-right: 10em;
+    width: 250px;
+}
+
+#englishInput {
+    height:100px;
+    margin-right: 5px;
+}
+
+#translateInput {
+    height: 100px;
+}
+
+#translateButton {
+    display: flex;
+    justify-content: center;
+    background-color: #011954;
+    color:white;
+    width: 100px;
+    border-radius: 15%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 8px;
+    margin-bottom: 50px;
+}
+
+#translateBox h2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#convertButton {
+    background-color: #011954;
+    color: white;
+    width: 100px;
+    border-radius: 15%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 8px;
+}
+
+#currencyConverter h2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
 }
