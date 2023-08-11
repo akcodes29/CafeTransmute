@@ -9,9 +9,13 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Boostrap CSS -->
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+<!-- //Font Awesome -->
+    <script src="https://kit.fontawesome.com/1389be5dd3.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
@@ -20,24 +24,29 @@
         <div class="row">
             <div class="col">
                 <h1 class="display-1 "><strong>CaféTransmute</strong></h1>
+                <i class="fa-solid fa-mug-hot fa-beat fa-xl" style="color: #503721;"></i>
             </div>
         </div>
     </div>
 
-    <form id="cityForm" class=" pt-5 ps-2">
-        <label id="cityPrompt" for="city">Please enter the city you would like to search.</label>
+    <form id="cityForm" class="container pt-5 ps-2">
+        <div class="row">
+            <div class="col-12">
+                <label id="cityPrompt" for="city">Please enter the city you would like to search.</label>
+            </div>
+        </div>
         <br>
         <input type="search" id="city" name="city" size="20">
         <br>
-        <input type="button" id="citySubmit" value="Submit">
+        <input type="button" id="citySubmit" value="Search">
     </form>
 
-    <iframe id='map' class="container-fluid" width="600" height="450" style="border:0" loading="lazy" allowfullscreen
+    <iframe id='map' class="container-fluid shadow p-3 mb-5 bg-body-tertiary rounded-5" width="600" height="450" style="border:0" loading="lazy" allowfullscreen
         referrerpolicy="no-referrer-when-downgrade"
         src="https://www.google.com/maps/embed/v1/search?key=AIzaSyD7RDg8X7uUVnvqkUwNzH0WpdBRlypx8v0&q=Coffee+shops+Swansea+Europe"></iframe>
 
-    <div id="translateBox">
-        <h2 class="ps-2">Translation</h2>
+    <div id="translateBox" class="container">
+        <h2 class="ps-2 pt-3">Translation</h2>
         <div class="dropdown">
             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -49,15 +58,43 @@
                 <a class="dropdown-item" href="#">Something else here</a>
             </div>
         </div>
-        <input id="englishInput" type="text">
-        <input id="translateInput" type="text">
-        <button id="translateButton">Translate</button>
+        <div class="container">
+            <div class="row">
+                <div class="col-6 ">
+                    <input id="englishInput" type="text">
+                </div>
+                <div class="col-6">
+                    <input id="translateInput" type="text">
+                </div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <button id="translateButton">Translate</button>
+                </div>
+            </div>
+        </div>
+        
     </div>
 
-    <div id="currencyConverter">
-        <h2 class="ps-2">Currency Converter</h2>
-        <input id="usdInput" type="text">
-        <input id="euroInput" type="text">
+    <div id="currencyConverter" class="container">
+        <h2 class="col-12 ps-2">Currency Converter</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-6 ">
+                    <input id="usdInput" type="text">
+                </div>
+                <div class="col-6">
+                    <input id="euroInput" type="text">
+                </div>
+            </div>
+        </div>
+        
+                
+            
+        
         <button id="convertButton">Convert</button>
     </div>
     <!--[if lt IE 7]>
