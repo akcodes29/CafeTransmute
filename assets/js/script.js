@@ -1,12 +1,12 @@
-$(`#citysubmit`).on('click', function() {
+$(`#citySubmit`).on('click', function() {
 
   var city = $(`#city`).val()
   $(`#map`).replaceWith(
 
-<iframe id="map" width="600" height="450" style="border:0" loading="lazy" allowfullscreen
-      referrerpolicy="no-referrer-when-downgrade"
-      src="https://www.google.com/maps/embed/v1/search?key=AIzaSyD7RDg8X7uUVnvqkUwNzH0WpdBRlypx8v0&q=Coffee+shops+${city}+Europe"></iframe>
-
+`<iframe id='map' class="container-fluid shadow p-3 mb-5 bg-body-tertiary rounded-5" width="600" height="450" style="border:0" loading="lazy" allowfullscreen
+        referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps/embed/v1/search?key=AIzaSyD7RDg8X7uUVnvqkUwNzH0WpdBRlypx8v0&q=Coffee+shops+${city}+Europe">
+    </iframe>`
   )
 
 });
@@ -44,18 +44,50 @@ async function convert(eur) {
 
   })
 
-//     <div id="currencyConverter">
-//     <h2>Currency Converter</h2>
-//     <input id="eur" type="text">
-//     <input id="usd" type="text">
-//     <button id="currencyCon">Convert</button>
-// </div>
 
 
-// <form>
-//         <label for="city">Please enter the city you would like to search.</label>
-//         <br>
-//         <input type="search" id="city" name="city" size="20">
-//         <br>
-//         <input type="button" id="citysubmit" value="Submit">
-//     </form>
+  // Translator
+
+  var url = `https://xlate.spwphoto.com/translate`;
+  var englishInput = ""
+  var lang = "fr"
+  var translateOutput = ""
+
+  $(`#translateButton`).on('click',async function() {
+    alert("Hai Guys")
+    englishInput= await $(`#englishInput`).val()
+   alert(englishInput)
+   await  xlate(englishInput,lang)
+    alert(translateOutput)
+   $(`#translateOutput`).val(translateOutput)
+  })
+
+
+
+async function xlate(phrase, target) {
+var xlated = ""
+   await fetch(url, {
+    method: "POST",
+   
+    body: JSON.stringify({
+      q: `${phrase}`,
+      source: "en",
+      target: `${target}`,
+      format: "text",
+      api_key: "",
+    }),
+    headers: { "Content-Type": "application/json" },
+  })
+   .then((response) => response.json())
+     .then((data) => {
+      xlated =  data.translatedText;
+      translateOutput = xlated
+      console.log(xlated)
+    })
+
+    .catch((error) => {
+      alert("Error: " + error);
+    });
+
+
+}
