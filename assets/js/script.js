@@ -91,9 +91,10 @@ async function convert(eur) {
   
 $(document).ready(function() {
 $('.dropdown-item').click(function() {
- var selectedItemText = $(this).attr('id');
- $('#dropdownMenuButton').text(selectedItemText);
-lang = selectedItemText
+ var selectedItemID = $(this).attr('id');
+ var selectedItemText = $(this).text()
+ $('#selectLang').text(selectedItemText);
+lang = selectedItemID
 });
 });
 
