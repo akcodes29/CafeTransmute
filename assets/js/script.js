@@ -54,11 +54,8 @@ async function convert(eur) {
   var translateOutput = ""
 
   $(`#translateButton`).on('click',async function() {
-    alert("Hai Guys")
     englishInput= await $(`#englishInput`).val()
-   alert(englishInput)
-   await  xlate(englishInput,lang)
-    alert(translateOutput)
+    await  xlate(englishInput,lang)
    $(`#translateOutput`).val(translateOutput)
   })
 
