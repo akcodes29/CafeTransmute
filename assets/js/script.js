@@ -1,3 +1,39 @@
+
+
+  var x = document.getElementById("demo");
+var gpslat = ""
+var gpslong = ""
+
+window.onload = function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+  // do nothing
+  }
+}
+
+function showPosition(position) {
+gpslat = position.coords.latitude
+gpslong = position.coords.longitude
+
+$(`#map`).replaceWith(
+
+`<iframe id='map' class="container-fluid shadow p-3 mb-5 bg-body-tertiary rounded-5" width="600" height="450" style="border:0" loading="lazy" allowfullscreen
+        referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps/embed/v1/search?key=AIzaSyD7RDg8X7uUVnvqkUwNzH0WpdBRlypx8v0&q=center=Coffee+shops+"${gpslat},${gpslong}"">
+    </iframe>`
+  )
+
+};
+
+
+
+
+
+
+
+
+
 $(`#citySubmit`).on('click', function() {
 
   var city = $(`#city`).val()
