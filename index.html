@@ -39,7 +39,7 @@
         <input type="button" id="citySubmit" value="Search">
     </form>
 
-    <iframe id='map' class="container-fluid shadow p-3 mb-5 bg-body-tertiary rounded-5" width="600" height="450" style="border:0" loading="lazy" allowfullscreen
+    <iframe id='map' class="container-fluid shadow p-3 mb-5 bg-body-tertiary rounded-5" width="600" height="400" style="border:0" loading="lazy" allowfullscreen
         referrerpolicy="no-referrer-when-downgrade"
         src="https://www.google.com/maps/embed/v1/search?key=AIzaSyD7RDg8X7uUVnvqkUwNzH0WpdBRlypx8v0&q=Coffee+shops+Swansea+Europe">
     </iframe>
@@ -51,39 +51,31 @@
         <h2 class="ps-2 pt-3">Translate Your Order</h2>
     </div>
 
+
     <div class="container">
         <div class="row">
-            <div class="col-6">
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" aria-label="Text input with dropdown button" id="englishInput" type="text" placeholder="Enter your desired order to be translated.">
-                        <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Translate To</button>
-                        <ul class="dropdown-menu dropdown-menu-end">
-                            <li><a id="fr" class="dropdown-item" >French</a></li>
-                            <li><a id="de" class="dropdown-item" >German</a></li>
-                            <li><a id="es" class="dropdown-item" >Spanish</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a id="gr" class="dropdown-item" >Greek</a></li>
-                        </ul>
-                    </div>
-             </div>
-            <div class="col-6">
-                <input id="translateOutput" type="text">
+            <div class="col-12 col-sm-6">
+                <div class="input-group mb-3">
+                    <input type="text" class="text-break"  aria-label="Text input with dropdown button" id="englishInput" type="text" placeholder="Enter your desired order to be translated.">
+                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Choose a language</button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a id="fr" class="dropdown-item" >French</a></li>
+                        <li><a id="de" class="dropdown-item" >German</a></li>
+                        <li><a id="es" class="dropdown-item" >Spanish</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a id="gr" class="dropdown-item" >Greek</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6">
+                <input id="translateOutput" type="text" aria-label="Text output into desired language">
             </div>
         </div>
-        <!-- <div class="container">
-            <div class="row">
-                <div class="col-6 ">
-                    <input id="englishInput" type="text" placeholder="Enter your desired order to be translated.">
-                </div>
-                <div class="col-6">
-                    <input id="translateOutput" type="text">
-                </div>
-            </div>
-        </div> -->
-       
+    </div>
+
         <div class="container">
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 d-flex justify-content-center">
                     <button id="translateButton">Translate</button>
                 </div>
             </div>
@@ -105,7 +97,7 @@
                 </div>
             </div>
         </div>
-        <button id="currencyCon">Convert</button>
+        <button id="currencyCon">Convert to USD</button>
     </div>
    
     <!-- Bootstrap JS -->
