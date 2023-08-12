@@ -46,21 +46,29 @@
 
     <hr class="solid">
 
-    <div id="translateBox" class="container">
-        <h2 class="ps-2 pt-3">Translate Your Order</h2>
-        <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown button
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <div id="translateBox" class="container">
+                    <h2 class="ps-2 pt-3">Translate Your Order</h2>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" aria-label="Text input with dropdown button" id="englishInput" type="text" placeholder="Enter your desired order to be translated.">
+                        <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Translate To</button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a id="fr" class="dropdown-item" >French</a></li>
+                            <li><a id="de" class="dropdown-item" >German</a></li>
+                            <li><a id="es" class="dropdown-item" >Spanish</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a id="gr" class="dropdown-item" >Greek</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <input id="translateOutput" type="text">
             </div>
         </div>
-
-        <div class="container">
+        <!-- <div class="container">
             <div class="row">
                 <div class="col-6 ">
                     <input id="englishInput" type="text" placeholder="Enter your desired order to be translated.">
@@ -69,8 +77,8 @@
                     <input id="translateOutput" type="text">
                 </div>
             </div>
-        </div>
-        
+        </div> -->
+       
         <div class="container">
             <div class="row">
                 <div class="col-12">

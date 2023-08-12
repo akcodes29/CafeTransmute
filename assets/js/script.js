@@ -50,8 +50,16 @@ async function convert(eur) {
 
   var url = `https://xlate.spwphoto.com/translate`;
   var englishInput = ""
-  var lang = "fr"
+  var lang = ""
   var translateOutput = ""
+  
+$(document).ready(function() {
+$('.dropdown-item').click(function() {
+ var selectedItemText = $(this).attr('id');
+ $('#dropdownMenuButton').text(selectedItemText);
+lang = selectedItemText
+});
+});
 
   $(`#translateButton`).on('click',async function() {
     englishInput= await $(`#englishInput`).val()
@@ -65,7 +73,7 @@ async function xlate(phrase, target) {
 var xlated = ""
    await fetch(url, {
     method: "POST",
-   
+    retry: 5,
     body: JSON.stringify({
       q: `${phrase}`,
       source: "en",
@@ -88,3 +96,5 @@ var xlated = ""
 
 
 }
+
+
