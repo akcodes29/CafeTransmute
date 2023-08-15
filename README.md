@@ -10,6 +10,8 @@ The target audience for this app are English speakers traveling Europe in need o
 
 ## How to Use
 
+This app uses your location to find nearby coffee shops, allows you to input your coffee order for translation into the local language, and then converts the order cost from Euros to USD.
+
 ## Future Development
 
 ## Authors
