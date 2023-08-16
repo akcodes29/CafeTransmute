@@ -36,11 +36,11 @@ Google Maps $7 per 1,000 hits
 
 ## Authors
 
-    * Kevin Brackin |   Github : kbrackin
-    *Gaviel Castro |    Github:  gavielskee
+    * Kevin Brackin  |  Github : kbrackin
+    * Gaviel Castro  |  Github:  gavielskee
     * Andrea Kerazies|  Github : akcodes29
-    * John Simeoni |    Github : JeehawdJack
-    * Sean Worrell |    Github : shutterspeed1000
+    * John Simeoni   |  Github : JeehawdJack
+    * Sean Worrell   |  Github : shutterspeed1000
     
 ## License
 
