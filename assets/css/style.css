@@ -226,3 +226,7 @@ footer{
 #subtitle {
     animation: fade-in 5s ease-in-out;
 }
+
+#headerTitle {
+    animation: fade-in 2s ease-in-out;
+}
