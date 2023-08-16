@@ -8,7 +8,7 @@ The target audience for this app are English speakers traveling Europe in need o
 
 ## Technologies Used
 
-- Maps Emded API
+- Maps Embed API
 - Libretranslate API
 - Free currency rates API
 - Bootstrap
