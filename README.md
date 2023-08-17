@@ -53,4 +53,4 @@ https://akcodes29.github.io/CafeTransmute/
 
 ## Screenshot 
 
-![screenshot of CafeTransmute webpage](assets/images/CafeTransmuteSS.png)
+![screenshot of CafeTransmute webpage](assets/images/CafeTransmute-SS.png)
