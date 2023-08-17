@@ -1,4 +1,4 @@
-# Coffee-Converter
+# CaféTransmute
 
 ## User Story 
 AS a traveler I WANT to be able to locate a nearby coffee shop, place my order in the native language, and convert the price to USD SO THAT I can stay on budget and emerge in local culture 
@@ -24,8 +24,9 @@ This application seeks permission to access your location in order to discover n
 - Future development plans include upgrading the APIs to a more consistent and reliable source. Also will have added features such as navigation to the coffee shop within the app itself to avoid the user leaving the app to navigate to the store.
 
 - Add all the languages in the European Union to the page.
-
 - Creating versions for other countries.
+- Text to speech
+- versions for other countries
 
 Projected cost: 
 Libretranslate $29/mo
@@ -48,7 +49,7 @@ N/A
 
 ## Deployed Application
 
-https://akcodes29.github.io/Coffee-Converter/
+https://akcodes29.github.io/CafeTransmute/
 
 ## Screenshot 
 
