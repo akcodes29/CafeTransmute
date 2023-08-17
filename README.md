@@ -49,7 +49,7 @@ N/A
 
 ## Deployed Application
 
-[https://akcodes29.github.io/Coffee-Converter/](https://akcodes29.github.io/Coffee-Converter/)
+https://akcodes29.github.io/CafeTransmute/
 
 ## Screenshot 
 
